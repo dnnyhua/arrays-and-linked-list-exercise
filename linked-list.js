@@ -132,7 +132,7 @@ class LinkedList {
   /** insertAt(idx, val): add node w/val before idx. */
 
   insertAt(idx, val) {
-    if (idx >= this.length || idx < 0) {
+    if (idx > this.length || idx < 0) {
       throw new Error("Invalid index.");
     }
 
